@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="key_permission_modify_system_settings_default_value">false</bool>
+</resources>

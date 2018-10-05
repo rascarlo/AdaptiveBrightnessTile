@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Adaptive Brightness Tile</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="permission_alert_dialog_message">To allow the tile to change brightness mode, please open settings and grant modify system settings permission.</string>
+    <string name="setting_not_found_alert_dialog_message">Adaptive brightness setting not found, the device does not support such brightness mode. The application will not work: you can uninstall it.</string>
+    <string name="settings">Settings</string>
+    <string name="adaptive_brightness">Adaptive brightness</string>
+    <string name="settings_permission_modify_system_settings_title">Permission</string>
+    <string name="settings_permission_modify_system_settings_summary_off">Modify system settings permission denied. The tile is not allowed to change brightness mode</string>
+    <string name="settings_permission_modify_system_settings_summary_on">Modify system settings permission granted. The tile is allowed to change brightness mode</string>
+    <string name="settings_github_link">https://github.com/rascarlo/AdaptiveBrightnessTile</string>
+    <string name="key_permission_modify_system_settings">key_permission_modify_system_settings</string>
+</resources>
