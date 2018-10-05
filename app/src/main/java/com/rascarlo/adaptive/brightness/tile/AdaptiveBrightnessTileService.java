@@ -93,7 +93,7 @@ public class AdaptiveBrightnessTileService extends TileService {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         startActivityAndCollapse(new Intent(getApplicationContext(), MainActivity.class)
-                                .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
+                                .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK));
                     }
                 });
                 break;
