@@ -2,7 +2,10 @@
 
 *A quick settings tile for adaptive brightness.*
 
-The app provides the user a tile that can be added to the Quick Settings layout in the notification panel to change adaptive brightness mode. Supported devices: Android 7.0+ (API 24).
+The app provides the user a tile that can be added to the Quick Settings layout in the notification panel to change adaptive brightness mode. 
+
+Supported devices: Android 7.0+ (API 24).
+
 The app makes use of the Quick Settings Tiles API released with Android 7.0 (API 24).
 
 - **Tile documentation:** https://developer.android.com/reference/android/service/quicksettings/Tile
