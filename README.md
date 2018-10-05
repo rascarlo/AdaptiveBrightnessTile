@@ -26,6 +26,6 @@ ___
 
 ### Screenshots
 
-<img src="https://github.com/rascarlo/AdaptiveBrightnessTile/blob/master/art/00.png" width="250" height="480" /> <img src="https://github.com/rascarlo/AdaptiveBrightnessTile/blob/master/art/01.png" width="250" height="480" />
+<img src="https://github.com/rascarlo/AdaptiveBrightnessTile/blob/master/phoneScreenshots/00.png" width="250" height="480" /> <img src="https://github.com/rascarlo/AdaptiveBrightnessTile/blob/master/phoneScreenshots/01.png" width="250" height="480" />
 
-<img src="https://github.com/rascarlo/AdaptiveBrightnessTile/blob/master/art/02.png" width="250" height="480" /> <img src="https://github.com/rascarlo/AdaptiveBrightnessTile/blob/master/art/03.png" width="250" height="480" />
+<img src="https://github.com/rascarlo/AdaptiveBrightnessTile/blob/master/phoneScreenshots/02.png" width="250" height="480" /> <img src="https://github.com/rascarlo/AdaptiveBrightnessTile/blob/master/phoneScreenshots/03.png" width="250" height="480" />
