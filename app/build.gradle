@@ -6,6 +6,7 @@ android {
         applicationId "com.rascarlo.adaptive.brightness.tile"
         minSdkVersion 24
         targetSdkVersion 28
+        resConfigs "en"
         versionCode 1
         versionName '0.1'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
