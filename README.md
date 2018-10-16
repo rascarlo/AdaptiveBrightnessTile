@@ -31,4 +31,6 @@ ___
 
 ___
 ### APK
+
+- **F-Droid:** https://f-droid.org/packages/com.rascarlo.adaptive.brightness.tile/
 - **Google Play:** https://play.google.com/store/apps/details?id=com.rascarlo.adaptive.brightness.tile
