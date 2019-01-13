@@ -1,13 +1,12 @@
 package com.rascarlo.adaptive.brightness.tile;
 
 import android.content.ComponentName;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.drawable.Icon;
 import android.provider.Settings;
 import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;
-import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AlertDialog.Builder;
 
 public class AdaptiveBrightnessTileService extends TileService {
 
@@ -76,35 +75,21 @@ public class AdaptiveBrightnessTileService extends TileService {
     }
 
     private void showDialog(int whichDialog) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this, R.style.AppTheme_AlertDialog);
+        Builder builder = new Builder(this, R.style.AppTheme_AlertDialog);
         builder.setCancelable(true)
                 .setIcon(R.drawable.ic_brightness_auto_white_24dp)
                 .setTitle(R.string.app_name)
-                .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.cancel();
-                    }
-                });
+                .setNegativeButton(R.string.cancel, (dialog, which) -> dialog.cancel());
         switch (whichDialog) {
             case PERMISSION_DIALOG:
                 builder.setMessage(R.string.permission_alert_dialog_message);
-                builder.setPositiveButton(R.string.settings, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
+                builder.setPositiveButton(R.string.settings, (dialog, which) ->
                         startActivityAndCollapse(new Intent(getApplicationContext(), MainActivity.class)
-                                .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK));
-                    }
-                });
+                                .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK)));
                 break;
             case SETTING_NOT_FOUND_DIALOG:
                 builder.setMessage(R.string.setting_not_found_alert_dialog_message);
-                builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.cancel();
-                    }
-                });
+                builder.setPositiveButton(R.string.ok, (dialog, which) -> dialog.cancel());
                 break;
         }
         showDialog(builder.create());
