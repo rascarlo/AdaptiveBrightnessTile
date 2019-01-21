@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.SwitchPreference;
 
@@ -20,7 +21,7 @@ public class SettingsFragment extends PreferenceFragmentCompat {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         switchPreferenceModifySystemSettingsPermission = getPreferenceManager().findPreference(getString(R.string.key_permission_modify_system_settings));
         if (getActivity() != null && getActivity().getPackageName() != null) {
             switchPreferenceModifySystemSettingsPermission.setOnPreferenceChangeListener((preference, o) -> {
