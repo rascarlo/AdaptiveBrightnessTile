@@ -1,6 +1,7 @@
 package com.rascarlo.adaptive.brightness.tile;
 
 import android.app.job.JobInfo;
+import android.app.job.JobInfo.TriggerContentUri;
 import android.app.job.JobParameters;
 import android.app.job.JobScheduler;
 import android.app.job.JobService;
@@ -17,8 +18,8 @@ public class AdaptiveBrightnessTileJobService extends JobService {
         JobScheduler jobScheduler = context.getSystemService(JobScheduler.class);
         if (jobScheduler != null) {
             jobScheduler.schedule(new JobInfo.Builder(ADAPTIVE_BRIGHTNESS_TILE_JOB_ID, componentName)
-                    .addTriggerContentUri(new JobInfo.TriggerContentUri(Settings.System.getUriFor(Settings.System.SCREEN_BRIGHTNESS_MODE),
-                            JobInfo.TriggerContentUri.FLAG_NOTIFY_FOR_DESCENDANTS))
+                    .addTriggerContentUri(new TriggerContentUri(Settings.System.getUriFor(Settings.System.SCREEN_BRIGHTNESS_MODE),
+                            TriggerContentUri.FLAG_NOTIFY_FOR_DESCENDANTS))
                     .setTriggerContentMaxDelay(0)
                     .setTriggerContentUpdateDelay(0)
                     .setRequiresCharging(false)
